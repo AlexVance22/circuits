@@ -1,0 +1,9 @@
+depends 1 OR
+NOR 2 1
+1 A 0
+1 A 1
+2
+A OR
+1 B 0
+B NOT
+1 _ 0

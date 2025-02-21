@@ -1,0 +1,7 @@
+{
+    "project": "circuit",
+    "cpp": "C++17",
+    "dependencies": [ "../../_Libs/SFML-3.static" ],
+
+    "include-public": "src/"
+}
