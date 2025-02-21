@@ -1,4 +1,4 @@
-depends 1 OR
+import 1 OR
 NOR 2 1
 1 A 0
 1 A 1
