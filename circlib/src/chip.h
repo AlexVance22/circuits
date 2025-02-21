@@ -7,6 +7,8 @@ class Chip {
 protected:
     uint32_t m_inputs = 0;
     uint32_t m_outputs = 0;
+    uint32_t m_incount;
+    uint32_t m_outcount;
 
     bool getInput(uint8_t port);
     bool getClock();
@@ -15,8 +17,8 @@ protected:
     virtual void update() = 0;
 
 public:
-    virtual uint32_t inCount() const = 0;
-    virtual uint32_t outCount() const = 0;
+    uint32_t inCount() const { return m_incount; }
+    uint32_t outCount() const { return m_outcount; }
 
     void setInput(uint8_t port, bool hilo);
     void setInputs(uint32_t all);

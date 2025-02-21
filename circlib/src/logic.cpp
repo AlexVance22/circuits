@@ -4,6 +4,7 @@
 LogicGate LogicGate::MakeNot() {
     LogicGate gate;
     gate.m_type = Type::Not;
+    gate.m_typename = "NOT";
     gate.m_incount = 1;
     gate.m_outcount = 1;
     return gate;
@@ -12,6 +13,7 @@ LogicGate LogicGate::MakeNot() {
 LogicGate LogicGate::MakeNand() {
     LogicGate gate;
     gate.m_type = Type::Nand;
+    gate.m_typename = "NAND";
     gate.m_incount = 2;
     gate.m_outcount = 1;
     return gate;

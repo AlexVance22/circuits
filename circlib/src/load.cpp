@@ -86,6 +86,11 @@ LogicGate LogicGate::loadFromFile(const std::string& filename, std::unordered_ma
     return result;
 }
 
+void LogicGate::saveToFile(const std::string& filename) {
+    std::ofstream stream(filename);
+
+}
+
 
 static size_t intpow(size_t base, size_t exp) {
     size_t res = 1;
